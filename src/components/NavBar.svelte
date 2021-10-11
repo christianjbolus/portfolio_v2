@@ -25,8 +25,9 @@
     counter-reset: link 0;
   }
 
-  ol li {
+  ol li a {
     color: #dfdfdf;
+    text-decoration: none;
     padding: 10px;
   }
   
