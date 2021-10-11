@@ -25,14 +25,19 @@
     counter-reset: link 0;
   }
 
+  ol li {
+    margin: 0 5px;
+    counter-increment: link;
+  }
+
   ol li a {
     color: #dfdfdf;
     text-decoration: none;
     padding: 10px;
+    cursor: pointer;
   }
   
   ol li a::before {
-    counter-increment: link;
     content: "0" counter(link) ".";
     color: var(--accent);
     margin-right: 5px;
