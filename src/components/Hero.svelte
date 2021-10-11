@@ -2,14 +2,16 @@
 <section class="hero">
   <h1>Greetings, my name is</h1>
 	<h2>Christian Bolus</h2>
-	<p>I'm a software engineer speicializing in technologies for the web.</p>
+	<p>I'm a software engineer specializing in technologies for the web.</p>
 </section>
 
 <style>
 	.hero {
 		display: flex;
 		flex-direction: column;
-		height: 100vh;
+		justify-content: center;
+		align-items: flex-start;
+		min-height: 100vh;
 
 	}
   h1 {
@@ -17,18 +19,18 @@
 		font-family: var(--font-mono);
 		font-size: 1em;
 		font-weight: 100;
-		margin: 0;
+		margin: 0 0 20px 4px;
 	}
 
 	h2 {
     color: #dfdfdf;
 		font-size: 4rem;
     font-weight: 700;
-		margin: 0;
+		margin-bottom: 20px;
 	}
 
   p {
     font-size: 1.1rem;
-    color: #fff;
+    color: rgb(165, 165, 165);
   }
 </style>
