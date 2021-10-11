@@ -1,10 +1,10 @@
 <div class="container">
   <nav class="navbar">
     <ol class="nav-links">
-      <li class="link"><a>About</a></li>
-      <li class="link"><a>Skills</a></li>
-      <li class="link"><a>Projects</a></li>
-      <li class="link"><a>Contact</a></li>
+      <li class="link"><a href='about'>About</a></li>
+      <li class="link"><a href='skills'>Skills</a></li>
+      <li class="link"><a href='projects'>Projects</a></li>
+      <li class="link"><a href='contact'>Contact</a></li>
     </ol>
   </nav>
 </div>
