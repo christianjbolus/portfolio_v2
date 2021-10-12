@@ -1,8 +1,13 @@
-
+<script>
+	import {fly} from 'svelte/transition'
+	
+</script>
 <section class="hero">
-  <h1>Greetings, my name is</h1>
-	<h2>Christian Bolus</h2>
-	<p>I'm a software engineer specializing in technologies for the web.</p>
+  <h1 transition:fly="{{y: -100, duration: 500, delay: 200}}">Greetings, my name is</h1>
+	<h2 transition:fly="{{y: -100, duration: 500, delay: 100}}">Christian Bolus</h2>
+	<p transition:fly="{{y: -100, duration: 500}}">
+		I'm a software engineer specializing in technologies for the web.
+	</p>
 </section>
 
 <style>
@@ -14,6 +19,7 @@
 		min-height: 100vh;
 
 	}
+
   h1 {
 		color: var(--accent);
 		font-family: var(--font-mono);
