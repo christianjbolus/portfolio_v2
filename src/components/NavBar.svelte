@@ -1,14 +1,24 @@
 <script>
+import {fly} from 'svelte/transition'
+
   import Button from './Button.svelte'
+  const links = [
+    {href: 'about', text: 'About'},
+    {href: 'skills', text: 'Skills'},
+    {href: 'projects', text: 'Projects'},
+    {href: 'contact', text: 'Contact'},
+  ]
+
 </script>
 
 <div class="container">
   <nav class="navbar">
     <ol class="nav-links">
-      <li class="link"><a href='about'>About</a></li>
-      <li class="link"><a href='skills'>Skills</a></li>
-      <li class="link"><a href='projects'>Projects</a></li>
-      <li class="link"><a href='contact'>Contact</a></li>
+      {#each links as link, i}
+        <li class="link" transition:fly="{{y: -100, duration: 500, delay: i * 100}}">
+          <a href={link.href}>{link.text}</a>
+        </li>
+      {/each}
       <Button text="Resume"/>
     </ol>
   </nav>
@@ -31,19 +41,19 @@
     counter-reset: link 0;
   }
 
-  ol li {
+  li {
     margin: 0 5px;
     counter-increment: link;
   }
 
-  ol li a {
+  a {
     color: #dfdfdf;
     text-decoration: none;
     padding: 10px;
     cursor: pointer;
   }
   
-  ol li a::before {
+  a::before {
     content: "0" counter(link) ".";
     color: var(--accent);
     margin-right: 5px;
