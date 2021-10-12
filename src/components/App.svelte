@@ -1,5 +1,5 @@
 <script>
-	import Hero from './Hero.svelte'
+	import Hero from './sections/Hero.svelte'
 	import NavBar from './NavBar.svelte'
 </script>
 
