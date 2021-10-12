@@ -1,6 +1,5 @@
 <script>
-import {fly} from 'svelte/transition'
-
+  import Transition from './Transition.svelte'
   import Button from './Button.svelte'
   const links = [
     {href: 'about', text: 'About'},
@@ -15,11 +14,15 @@ import {fly} from 'svelte/transition'
   <nav class="navbar">
     <ol class="nav-links">
       {#each links as link, i}
-        <li class="link" transition:fly="{{y: -100, duration: 500, delay: i * 100}}">
+      <Transition config={{y: -100, duration: 500, delay: i * 100}}>
+        <li class="link">
           <a href={link.href}>{link.text}</a>
         </li>
+      </Transition>
       {/each}
-      <Button text="Resume"/>
+      <Transition config={{y: -100, duration: 500, delay: links.length * 100}}>
+        <Button text="Resume"/>
+      </Transition>
     </ol>
   </nav>
 </div>
