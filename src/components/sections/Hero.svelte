@@ -1,13 +1,19 @@
 <script>
-	import {fly} from 'svelte/transition'
+	import Transition from '../Transition.svelte'
 	
 </script>
 <section class="hero">
-  <h1 transition:fly="{{y: -100, duration: 500, delay: 200}}">Greetings, my name is</h1>
-	<h2 transition:fly="{{y: -100, duration: 500, delay: 100}}">Christian Bolus</h2>
-	<p transition:fly="{{y: -100, duration: 500}}">
-		I'm a software engineer specializing in technologies for the web.
-	</p>
+	<Transition config={{y: -100, duration: 500, delay: 200}}>
+		<h1>Greetings, my name is</h1>
+	</Transition>
+	<Transition config={{y: -100, duration: 500, delay: 100}}>
+		<h2>Christian Bolus</h2>
+	</Transition>
+	<Transition config={{y: -100, duration: 500}}>
+		<p>
+			I'm a software engineer specializing in technologies for the web.
+		</p>
+	</Transition>
 </section>
 
 <style>
