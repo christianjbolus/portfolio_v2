@@ -1,3 +1,7 @@
+<script>
+  import Button from './Button.svelte'
+</script>
+
 <div class="container">
   <nav class="navbar">
     <ol class="nav-links">
@@ -5,6 +9,7 @@
       <li class="link"><a href='skills'>Skills</a></li>
       <li class="link"><a href='projects'>Projects</a></li>
       <li class="link"><a href='contact'>Contact</a></li>
+      <Button text="Resume"/>
     </ol>
   </nav>
 </div>
@@ -22,6 +27,7 @@
     font-size: 0.8rem;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     counter-reset: link 0;
   }
 
