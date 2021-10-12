@@ -1,19 +1,29 @@
 <script>
 	import Transition from '../Transition.svelte'
+	import {onMount} from 'svelte'
 
 	const one = `<h1>Greetings, my name is</h1>`
 	const two = `<h2>Christian Bolus</h2>`
 	const three = `<p>I'm a software engineer specializing in technologies for the web.</p>`
 	const items = [one, two, three]
 	
+	let render = false;
+	onMount(() => {
+		setTimeout(() => {
+			render = true
+		}, 1000);
+	})
+
 </script>
 
 <section class="hero">
-	{#each items as item, i}
-		<Transition config={{y: -100, duration: 500, delay: ((items.length * 100) - (i * 100))}}>
-			<div>{@html item}</div>
-		</Transition>
-	{/each}
+	{#if render}
+		{#each items as item, i}
+			<Transition config={{y: -100, duration: 500, delay: ((items.length * 100) - (i * 100))}}>
+				<div>{@html item}</div>
+			</Transition>
+		{/each}
+	{/if}
 </section>
 
 <style>
