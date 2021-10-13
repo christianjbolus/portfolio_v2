@@ -3,6 +3,5 @@
 </script>
 
 <section>
-  <!-- <NumberedHeader number="01" text="About Me" /> -->
-  <p>Hello</p>
+  <NumberedHeader number="01" text="About Me" />
 </section>
