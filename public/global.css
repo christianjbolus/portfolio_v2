@@ -51,5 +51,7 @@ table {
 :root {
 	--accent: #ff3300;
 	--red-tint: rgba(255, 51, 0, 0.1);
+	--light-grey: #dfdfdf;
+	--dark-grey: #a5a5a5;
 	--font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono", monospace;
 }
