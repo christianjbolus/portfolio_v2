@@ -1,5 +1,5 @@
 <script>
-	import Transition from '../Transition.svelte'
+	import Transition from '../effects/Transition.svelte'
 	import {onMount} from 'svelte'
 
 	const one = `<h1>Greetings, my name is</h1>`
@@ -45,7 +45,7 @@
 	}
 
 	div :global(h2) {
-    color: #dfdfdf;
+    color: var(--light-grey);
 		font-size: 4rem;
     font-weight: 700;
 		margin-bottom: 20px;
@@ -53,6 +53,6 @@
 
   div :global(p) {
     font-size: 1.1rem;
-    color: rgb(165, 165, 165);
+    color: var(--dark-grey);
   }
 </style>

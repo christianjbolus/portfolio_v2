@@ -1,5 +1,5 @@
 <script>
-  import Transition from './Transition.svelte'
+  import Transition from './effects/Transition.svelte'
   import Button from './Button.svelte'
   const links = [
     {href: 'about', text: 'About'},
@@ -50,7 +50,7 @@
   }
 
   a {
-    color: #dfdfdf;
+    color: var(--light-grey);
     text-decoration: none;
     padding: 10px;
     cursor: pointer;
