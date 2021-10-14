@@ -6,7 +6,7 @@
     ]
 </script>
 
-<section class="about">
+<section class="about" id="about">
   <NumberedHeader text="About Me" />
   <div class="container">
     <div>
