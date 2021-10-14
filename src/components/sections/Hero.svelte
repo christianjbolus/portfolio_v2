@@ -3,9 +3,10 @@
 	import {onMount} from 'svelte'
 
 	const one = `<h1>Greetings, my name is</h1>`
-	const two = `<h2>Christian Bolus</h2>`
-	const three = `<p>I'm a software engineer specializing in technologies for the web.</p>`
-	const items = [one, two, three]
+	const two = `<h2>Christian Bolus.</h2>`
+	const three = `<h3>I work for the internet.</h3>`
+	const four = `<p>I'm a software engineer specializing in technologies for the web.</p>`
+	const items = [one, two, three, four]
 	
 	let render = false;
 	onMount(() => {
@@ -46,6 +47,13 @@
 
 	div :global(h2) {
     color: var(--light-grey);
+		font-size: 4rem;
+    font-weight: 700;
+		margin-bottom: 15px;
+	}
+
+	div :global(h3) {
+    color: var(--dark-grey);
 		font-size: 4rem;
     font-weight: 700;
 		margin-bottom: 20px;
