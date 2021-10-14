@@ -1,13 +1,14 @@
 <script>
-	import Hero from './sections/Hero.svelte'
+	import {About, Hero} from './sections'
 	import NavBar from './NavBar.svelte'
-	import About from './sections/About.svelte'
+	import Social from './Social.svelte'
 </script>
 
 <main>
 	<NavBar />
 	<Hero />
 	<About />
+	<Social />
 </main>
 
 <style>
