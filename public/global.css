@@ -48,6 +48,13 @@ table {
 	border-collapse: collapse;
 }
 
+.social-icon {
+	color: white;
+	height: 20px;
+	width: 20px;
+	padding: 10px;
+}
+
 :root {
 	--accent: #ff3300;
 	--red-tint: rgba(255, 51, 0, 0.1);
