@@ -1,29 +1,31 @@
 <script>
-  import { GitHub, LinkedIn, Twitter, Instagram } from './icons/index'
-  const icons = [GitHub, LinkedIn, Twitter, Instagram]
+  import { Icon } from './icons/index'
+  import {socialMedia} from '../data'
 </script>
 
 <div class="social">
-  <a href="https://github.com/christianjbolus">
-    <GitHub />
-  </a>
-  <a>
-    <LinkedIn />
-  </a>
-  <a>
-    <Twitter />
-  </a>
-  <a>
-    <Instagram />
-  </a>
+  {#each socialMedia as {name, url}}
+    <a href={url}>
+      <Icon name={name} />
+    </a>
+  {/each}
 </div>
 
 <style lang="scss">
   .social {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: fixed;
     bottom: 0;
     left: 20px;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 90px;
+      background-color: var(--light-grey);
+    }
   }
 </style>
