@@ -1,26 +1,20 @@
 <script>
   import Transition from './effects/Transition.svelte'
   import Button from './Button.svelte'
-  const links = [
-    {href: 'about', text: 'About'},
-    {href: 'skills', text: 'Skills'},
-    {href: 'projects', text: 'Projects'},
-    {href: 'contact', text: 'Contact'},
-  ]
-
+  import { navLinks } from '../data.js'
 </script>
 
 <div class="container">
   <nav class="navbar">
     <ol class="nav-links">
-      {#each links as link, i}
+      {#each navLinks as {url, name}, i}
       <Transition config={{y: -100, duration: 500, delay: i * 100}}>
         <li class="link">
-          <a href={link.href}>{link.text}</a>
+          <a href={url}>{name}</a>
         </li>
       </Transition>
       {/each}
-      <Transition config={{y: -100, duration: 500, delay: links.length * 100}}>
+      <Transition config={{y: -100, duration: 500, delay: navLinks.length * 100}}>
         <Button text="Resume"/>
       </Transition>
     </ol>
