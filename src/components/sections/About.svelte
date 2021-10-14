@@ -12,7 +12,7 @@
     <div class="container">
       <div>
         <p>
-          Hard working and diligent Software Engineer with a love of learning and an insatiable curiosity.  
+          Hello there! Hard working and diligent Software Engineer with a love of learning and an insatiable curiosity.  
           I have a tenacious approach to problem solving and am motivated by overcoming challenges and 
           developing efficient solutions.  I’m passionate about building products that reduce friction 
           in the lives of the user.    
