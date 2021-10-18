@@ -2,6 +2,7 @@
 	import {About, Hero} from './sections'
 	import NavBar from './NavBar.svelte'
 	import Social from './Social.svelte'
+	import Email from './Email.svelte'
 </script>
 
 <main>
@@ -9,6 +10,7 @@
 	<Hero />
 	<About />
 	<Social />
+	<Email />
 </main>
 
 <style>

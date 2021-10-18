@@ -1,7 +1,7 @@
 <script>
   import { fade } from 'svelte/transition'
   import { Icon } from './icons/index'
-  import {socialMedia} from '../data'
+  import { socialMedia } from '../data'
 </script>
 
 
