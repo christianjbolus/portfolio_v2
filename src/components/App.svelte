@@ -1,8 +1,6 @@
 <script>
 	import {About, Hero} from './sections'
-	import NavBar from './NavBar.svelte'
-	import Social from './Social.svelte'
-	import Email from './Email.svelte'
+	import { NavBar, Social, Email } from './index'
 </script>
 
 <main>
