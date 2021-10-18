@@ -1,26 +1,25 @@
 <script>
   import { fade } from 'svelte/transition'
+  import {Side} from './index'
   import { Icon } from './icons/index'
   import { socialMedia } from '../data'
 </script>
 
-
-<div class="social" transition:fade={{duration: 500, delay: 2000}}>
-  {#each socialMedia as {name, url}}
+<Side orientation="left">
+  <div class="social" transition:fade={{duration: 500, delay: 2000}}>
+    {#each socialMedia as {name, url}}
     <a href={url}>
       <Icon name={name} />
     </a>
-  {/each}
-</div>
+    {/each}
+  </div>
+</Side>
 
 <style lang="scss">
   .social {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 20px;
 
     &:after {
       content: '';
