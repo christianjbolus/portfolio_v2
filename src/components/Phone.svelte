@@ -4,7 +4,7 @@
 
 <div class="phone-graphic">
   <div class="phone-screen">
-    <div class="screen-display" id="neuze-img"></div>
+    <img class="screen-display" src="chatter_main.png" />
   </div>
 </div>
 
@@ -29,9 +29,10 @@
 }
 
 .screen-display {
-  background-size: cover;
+  object-fit: cover;
+  object-position: top;
   width: 100%;
-  height: 90%;
-  overflow: hidden;
+  height: 87%;
+  /* overflow: hidden; */
 }
 </style>

@@ -20,10 +20,15 @@
   }
 
   .description {
-    background-color: #fff;
-    grid-column: 4 / 13;
+    background-color: #3b3b3b;
+    grid-column: 4 / 11;
     grid-row: 1 / 1;
     align-self: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: var(--dark-grey);
+    line-height: 27px;
   }
 
 </style>
