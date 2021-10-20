@@ -1,5 +1,5 @@
 <script>
-	import { About, Hero } from './sections'
+	import { Hero, About, Projects } from './sections'
 	import { NavBar, Social, Email } from './index'
 </script>
 
@@ -7,6 +7,7 @@
 	<NavBar />
 	<Hero />
 	<About />
+	<Projects />
 	<Social />
 	<Email />
 </main>
