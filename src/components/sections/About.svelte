@@ -6,6 +6,7 @@
   //   "Express", "Ruby on Rails", "Mongo DB", "PostgreSQL", "GraphQL", "Git"  
   //   ]
 </script>
+
   <ScrollReveal>
     <section class="about">
       <NumberedHeader text="About Me" />
@@ -37,6 +38,7 @@
   .about {
     max-width: 900px;
     margin: 0 auto;
+    padding: 100px 0;
   }
 
   .container {
