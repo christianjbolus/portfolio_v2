@@ -11,11 +11,11 @@
 <style>
 .phone-graphic {
   height: 533px;
-  width: 264px;
   background-color: rgb(85, 84, 84);
   border-radius: 36px;
   padding: 8px;
-  margin-bottom: 50px;
+  grid-column: 1 / 5;
+  grid-row: 1 / 1;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4),
               inset 0 -2px 8px rgba(0, 0, 0, 1);
 }
