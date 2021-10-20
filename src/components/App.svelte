@@ -1,5 +1,5 @@
 <script>
-	import {About, Hero} from './sections'
+	import { About, Hero } from './sections'
 	import { NavBar, Social, Email } from './index'
 </script>
 
