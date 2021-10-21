@@ -44,8 +44,10 @@ module.exports = {
       name: 'Chatter',
       description:
         'Chatter is a full-stack micro blogging application with user auth that allows users to post 280 character “Chats.” A user can edit their Chats and respond to another user’s Chats. Includes form validation on register/login forms. Built with a Ruby on Rails/PostgreSQL backend and a React/Next.js frontend.',
-        image: "chatter_main.png",
-        alt: "Chatter's main mobile view.",
+        image: {
+          path: "chatter_main.png",
+          alt: "Chatter's main mobile view."
+        },
         tech: ["React", "Next.js", "Ruby", "Ruby on Rails", "PostgreSQL"],
         url: "https://chatter-social.netlify.app/",
         github: "https://github.com/christianjbolus/chatter"
