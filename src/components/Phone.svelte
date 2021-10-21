@@ -4,7 +4,7 @@
 
 <div class="phone-graphic">
   <div class="phone-screen">
-    <img class="screen-display" src="chatter_main.png" />
+    <img class="screen-display" src="chatter_main.png" alt="Chatter's main mobile view"/>
   </div>
 </div>
 
