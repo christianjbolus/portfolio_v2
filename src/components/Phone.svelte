@@ -33,6 +33,5 @@
   object-position: top;
   width: 100%;
   height: 87%;
-  /* overflow: hidden; */
 }
 </style>
