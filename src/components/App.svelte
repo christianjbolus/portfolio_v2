@@ -12,8 +12,9 @@
 	<Email />
 </main>
 
-<style>
+<style lang="scss">
 	main {
 		padding: 0 150px;
+		counter-reset: section;
 	}
 </style>

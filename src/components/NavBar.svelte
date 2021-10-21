@@ -21,7 +21,7 @@
   </nav>
 </div>
 
-<style>
+<style lang="scss">
   .container {
     height: 100px;
     display: flex;
@@ -35,7 +35,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    counter-reset: link 0;
+    counter-reset: link;
   }
 
   li {
@@ -48,11 +48,12 @@
     text-decoration: none;
     padding: 10px;
     cursor: pointer;
+
+    &::before {
+      content: "0" counter(link) ".";
+      color: var(--accent);
+      margin-right: 5px;
+    }
   }
-  
-  a::before {
-    content: "0" counter(link) ".";
-    color: var(--accent);
-    margin-right: 5px;
-  }
+
 </style>
