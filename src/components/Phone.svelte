@@ -1,10 +1,10 @@
 <script>
-
+ export let image = {}
 </script>
 
 <div class="phone-graphic">
   <div class="phone-screen">
-    <img class="screen-display" src="chatter_main.png" alt="Chatter's main mobile view"/>
+    <img class="screen-display" src={image.path} alt={image.alt}/>
   </div>
 </div>
 

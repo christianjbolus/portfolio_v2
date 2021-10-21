@@ -1,34 +1,64 @@
 <script>
   import { Phone } from './index'
+  export let project = {}
 </script>
 
 <div class="container">
-  <Phone />
-  <div class="description">
-    <p>Chatter is a full-stack micro blogging application with user auth that allows 
-      users to post 280 character “Chats.” A user can edit their Chats and respond to 
-      another user’s Chats. Includes form validation on register/login forms. 
-      Built with a Ruby on Rails/PostgreSQL backend and a React/Next.js frontend.</p>
+  <Phone image={project.image}/>
+  <div class="info">
+    <h3 class="title">{project.name}</h3>
+    <div class="description">
+      <p>{project.description}</p>
+    </div>
+    <ul class="tech">
+      {#each project.tech as tool }
+        <li class="tool">{tool}</li>
+      {/each}
+    </ul>
   </div>
 </div>
 
 <style>
   .container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     gap: 10px;
+  }
+
+  .info {
+    grid-column: 4 / 11;
+    grid-row: 1 / 1;
+    align-self: center;
+    text-align: right;
+  }
+
+  .title {
+    color: var(--light-grey);
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
   }
 
   .description {
     background-color: #3b3b3b;
-    grid-column: 4 / 11;
-    grid-row: 1 / 1;
-    align-self: center;
     padding: 20px;
     border-radius: 5px;
-    font-size: 1.1rem;
     color: var(--dark-grey);
     line-height: 27px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2)
+  }
+
+  .tech {
+    display: flex;
+    justify-content: flex-end;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--light-grey);
+    margin-top: 30px;
+  }
+
+  .tool {
+    margin-left: 20px;
   }
 
 </style>

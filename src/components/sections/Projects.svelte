@@ -1,16 +1,19 @@
 <script>
   import { Project } from '../index'
-import NumberedHeader from '../NumberedHeader.svelte';
+  import NumberedHeader from '../NumberedHeader.svelte';
+  import {projects} from '../../data'
 </script>
 
 <section class="projects" id="projects">
   <NumberedHeader text="My Projects"/>
-  <Project />
+  <Project project={projects[0]}/>
 
 </section>
 
 <style>
   .projects {
-    max-width: 860px;
+    max-width: 710px;
+    padding: 100px 0;
+    margin: 0 auto;
   }
 </style>
