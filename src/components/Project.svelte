@@ -1,22 +1,25 @@
 <script>
   import { Phone } from './index'
+  import ScrollReveal from './effects/ScrollReveal.svelte'
   export let project = {}
 </script>
 
-<div class="container">
-  <Phone image={project.image}/>
-  <div class="info">
-    <h3 class="title">{project.name}</h3>
-    <div class="description">
-      <p>{project.description}</p>
-    </div>
-    <ul class="tech">
-      {#each project.tech as tool }
+<ScrollReveal>
+  <div class="container">
+    <Phone image={project.image}/>
+    <div class="info">
+      <h3 class="title">{project.name}</h3>
+      <div class="description">
+        <p>{project.description}</p>
+      </div>
+      <ul class="tech">
+        {#each project.tech as tool }
         <li class="tool">{tool}</li>
-      {/each}
-    </ul>
+        {/each}
+      </ul>
+    </div>
   </div>
-</div>
+</ScrollReveal>
 
 <style>
   .container {
