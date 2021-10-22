@@ -12,10 +12,11 @@
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 40px;
+    white-space: nowrap;
 
     &:before {
       counter-increment: section;
-	    content: "0" counter(section);
+	    content: "0" counter(section) ".";
       color: var(--accent);
       font-family: var(--font-mono);
       position: relative;
