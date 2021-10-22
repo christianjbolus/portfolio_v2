@@ -1,5 +1,5 @@
 <script>
- export let image = {}
+  export let image = {}
 </script>
 
 <div class="phone-graphic">
@@ -11,6 +11,7 @@
 <style>
 .phone-graphic {
   height: 533px;
+  min-width: 264px;
   background-color: rgb(85, 84, 84);
   border-radius: 36px;
   padding: 8px;

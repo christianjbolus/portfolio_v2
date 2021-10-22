@@ -54,6 +54,7 @@
   .tech {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     font-family: var(--font-mono);
     font-size: 0.8rem;
     color: var(--light-grey);
@@ -61,7 +62,7 @@
   }
 
   .tool {
-    margin-left: 20px;
+    margin: 0 0 5px 20px;
   }
 
 </style>

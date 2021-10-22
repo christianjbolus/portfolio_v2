@@ -16,5 +16,9 @@
 	main {
 		padding: 0 150px;
 		counter-reset: section;
+
+		@media (max-width: 1024px) {
+			padding: 0 100px;
+		}
 	}
 </style>
