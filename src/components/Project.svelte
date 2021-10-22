@@ -21,11 +21,18 @@
   </div>
 </ScrollReveal>
 
-<style>
+<style lang="scss">
   .container {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 10px;
+    margin: 0 auto;
+
+    @media (max-width: 764px) {
+      grid-template-columns: 1fr;
+      gap: 0;
+      width: 280px;
+    }
   }
 
   .info {
@@ -33,6 +40,19 @@
     grid-row: 1 / 1;
     align-self: center;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    @media (max-width: 764px) {
+      grid-column: 1;
+      text-align: left;
+      background-color: rgba(59, 59, 59, 0.95);
+      /* width: 100%; */
+      height: 100%;
+      border-radius: 34px;
+      padding: 0 20px;
+    }
   }
 
   .title {
@@ -48,7 +68,13 @@
     border-radius: 5px;
     color: var(--dark-grey);
     line-height: 27px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 764px) {
+      background-color: transparent;
+      box-shadow: none;
+      padding: 0;
+    }
   }
 
   .tech {
@@ -59,10 +85,18 @@
     font-size: 0.8rem;
     color: var(--light-grey);
     margin-top: 30px;
+
+    @media (max-width: 764px) {
+      justify-content: flex-start;
+    }
   }
 
   .tool {
     margin: 0 0 5px 20px;
+
+    @media (max-width: 764px) {
+      margin: 0 20px 5px 0;
+    }
   }
 
 </style>
