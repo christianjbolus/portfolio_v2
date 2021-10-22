@@ -48,9 +48,8 @@
       grid-column: 1;
       text-align: left;
       background-color: rgba(59, 59, 59, 0.95);
-      /* width: 100%; */
       height: 100%;
-      border-radius: 34px;
+      border-radius: 36px;
       padding: 0 20px;
     }
   }
