@@ -8,7 +8,9 @@
 <ScrollReveal>
   <section class="projects" id="projects">
     <NumberedHeader text="My Projects"/>
-    <Project project={projects[0]}/>
+    {#each projects as project}
+      <Project project={project}/>
+    {/each}
   </section>
 </ScrollReveal>
 

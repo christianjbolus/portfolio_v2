@@ -26,7 +26,7 @@
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 10px;
-    margin: 0 auto;
+    margin: 0 auto 100px;;
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;

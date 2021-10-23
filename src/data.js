@@ -56,8 +56,10 @@ module.exports = {
       name: 'My Table',
       description:
         'My Table is a full-stack application with user auth that allows users to Create, Read, Update and Delete their favorites recipes. It utilizes a custom authentication server built with Express and TypeScript and uses Airtable as the database. The frontend was built using React.',
-        image: "#",
-        alt: "My Table's main mobile view.",
+        image: {
+          path: "my_table.png",
+          alt: "My Table's main mobile view.",
+        }, 
         tech: ["React", "Node.js", "Express", "TypeScript"],
         url: "https://my-table.netlify.app/",
         github: "https://github.com/christianjbolus/my_table"
@@ -66,8 +68,10 @@ module.exports = {
       name: 'Neuze',
       description:
         'Neuze is a frontend application utilizing the NY Times API that allows users to search for articles, view the details of an article using a custom built modal and save articles to their local storage for later viewing. Includes form validation on the search bar. Built using HTML, CSS and JavaScript.',
-        image: "#",
-        alt: "Neuze's main mobile view.",
+        image: {
+          path: "neuze.png",
+          alt: "Neuze's main mobile view.",
+        }, 
         tech: ["HTML", "CSS", "JavaScript"],
         url: "https://christianjbolus.github.io/neuze/",
         github: "https://github.com/christianjbolus/neuze"
