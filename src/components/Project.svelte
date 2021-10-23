@@ -28,7 +28,7 @@
     gap: 10px;
     margin: 0 auto;
 
-    @media (max-width: 764px) {
+    @media (max-width: 768px) {
       grid-template-columns: 1fr;
       gap: 0;
       width: 280px;
@@ -44,7 +44,7 @@
     flex-direction: column;
     justify-content: center;
     
-    @media (max-width: 764px) {
+    @media (max-width: 768px) {
       grid-column: 1;
       text-align: left;
       background-color: rgba(59, 59, 59, 0.95);
@@ -69,7 +69,7 @@
     line-height: 27px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
-    @media (max-width: 764px) {
+    @media (max-width: 768px) {
       background-color: transparent;
       box-shadow: none;
       padding: 0;
@@ -85,7 +85,7 @@
     color: var(--light-grey);
     margin-top: 30px;
 
-    @media (max-width: 764px) {
+    @media (max-width: 768px) {
       justify-content: flex-start;
     }
   }
@@ -93,7 +93,7 @@
   .tool {
     margin: 0 0 5px 20px;
 
-    @media (max-width: 764px) {
+    @media (max-width: 768px) {
       margin: 0 20px 5px 0;
     }
   }
