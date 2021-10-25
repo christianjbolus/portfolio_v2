@@ -8,13 +8,13 @@
   <nav class="navbar">
     <ol class="nav-links">
       {#each navLinks as {url, name}, i}
-      <Transition config={{y: -100, duration: 500, delay: i * 100}}>
+      <Transition type="fly" config={{y: -100, duration: 500, delay: i * 100}}>
         <li class="link">
           <a href={url}>{name}</a>
         </li>
       </Transition>
       {/each}
-      <Transition config={{y: -100, duration: 500, delay: navLinks.length * 100}}>
+      <Transition type="fly" config={{y: -100, duration: 500, delay: navLinks.length * 100}}>
         <Button text="Resume"/>
       </Transition>
     </ol>

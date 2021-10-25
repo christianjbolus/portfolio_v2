@@ -8,7 +8,7 @@
   </div>
 </div>
 
-<style>
+<style lang="scss">
 .phone-graphic {
   height: 533px;
   min-width: 264px;
@@ -20,6 +20,7 @@
   grid-row: 1 / 1;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4),
               inset 0 -2px 8px rgba(0, 0, 0, 1);
+
 }
 
 .phone-screen {

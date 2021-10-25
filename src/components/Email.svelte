@@ -1,13 +1,15 @@
 <script>
-  import { fade } from 'svelte/transition'
   import { Side } from './index'
+  import Transition from './effects/Transition.svelte'
   import { email } from '../data'
 </script>
 
 <Side orientation="right">
-  <div class="email" transition:fade={{duration: 500, delay: 2000}}>
-    <a href={`mailto:${email}`}>{email}</a>
-  </div>
+  <Transition type="fade" config={{duration: 500, delay: 2000}}>
+    <div class="email">
+      <a href={`mailto:${email}`}>{email}</a>
+    </div>
+  </Transition>
 </Side>
 
 <style lang="scss">

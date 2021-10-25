@@ -20,7 +20,7 @@
 <section class="hero">
 	{#if render}
 		{#each items as item, i}
-			<Transition config={{y: -100, duration: 500, delay: ((items.length * 100) - (i * 100))}}>
+			<Transition type="fly" config={{y: -100, duration: 500, delay: ((items.length * 100) - (i * 100))}}>
 				<div>{@html item}</div>
 			</Transition>
 		{/each}
