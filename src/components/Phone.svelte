@@ -1,12 +1,12 @@
 <script>
-  export let image = {}, order
+  export let image = {}, url, order
 </script>
 
-<div class={`phone-graphic ${order}`}>
+<a class={`phone-graphic ${order}`} href={url} target="_blank">
   <div class="phone-screen">
     <img class="screen-display" src={image.path} alt={image.alt}/>
   </div>
-</div>
+</a>
 
 <style lang="scss">
 .phone-graphic {

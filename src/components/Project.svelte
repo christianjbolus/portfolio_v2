@@ -6,7 +6,7 @@
 
 <ScrollReveal>
   <div class="container">
-    <Phone image={project.image} order={project.order}/>
+    <Phone image={project.image} order={project.order} url={project.url}/>
     <div class={`info ${project.order}`}>
       <h3 class="title">{project.name}</h3>
       <div class="description">
