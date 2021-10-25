@@ -1,6 +1,6 @@
 <script>
   import NumberedHeader from "../NumberedHeader.svelte";
-  import ScrollReveal from '../effects/ScrollReveal.svelte'
+  import { ScrollReveal } from '../effects'
   // const skills = [
   //   "JavaScript", "TypeScript", "Ruby", "HTML/CSS", "React", "Next.js", "Node.js", 
   //   "Express", "Ruby on Rails", "Mongo DB", "PostgreSQL", "GraphQL", "Git"  

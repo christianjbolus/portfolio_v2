@@ -1,6 +1,6 @@
 <script>
   import { Side } from './index'
-  import Transition from './effects/Transition.svelte'
+  import { Transition } from './effects/'
   import { email } from '../data'
 </script>
 

@@ -1,7 +1,7 @@
 <script>
   import { Project } from '../index'
   import { NumberedHeader } from '../index';
-  import ScrollReveal from '../effects/ScrollReveal.svelte';
+  import { ScrollReveal } from '../effects';
   import { projects } from '../../data'
 </script>
 

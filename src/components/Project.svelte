@@ -1,6 +1,6 @@
 <script>
   import { Phone } from './index'
-  import ScrollReveal from './effects/ScrollReveal.svelte'
+  import { ScrollReveal } from './effects'
   export let project = {}
 </script>
 

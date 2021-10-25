@@ -1,7 +1,7 @@
 <script>
   import { Side } from './index'
   import { Icon } from './icons/index'
-  import Transition from './effects/Transition.svelte'
+  import { Transition } from './effects/'
   import { socialMedia } from '../data'
 </script>
 
