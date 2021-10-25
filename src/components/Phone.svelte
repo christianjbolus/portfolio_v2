@@ -1,8 +1,8 @@
 <script>
-  export let image = {}
+  export let image = {}, order
 </script>
 
-<div class="phone-graphic">
+<div class={`phone-graphic ${order}`}>
   <div class="phone-screen">
     <img class="screen-display" src={image.path} alt={image.alt}/>
   </div>
@@ -21,6 +21,14 @@
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4),
               inset 0 -2px 8px rgba(0, 0, 0, 1);
 
+  &.odd {
+    grid-column: 7 / 11;
+    grid-row: 1 / 1;
+
+    @media (max-width: 768px) {
+      grid-column: 1 
+    }
+  }
 }
 
 .phone-screen {

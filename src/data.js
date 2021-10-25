@@ -50,7 +50,8 @@ module.exports = {
         },
         tech: ["React", "Next.js", "Ruby", "Ruby on Rails", "PostgreSQL"],
         url: "https://chatter-social.netlify.app/",
-        github: "https://github.com/christianjbolus/chatter"
+        github: "https://github.com/christianjbolus/chatter",
+        order: "even"
     },
     {
       name: 'My Table',
@@ -62,7 +63,8 @@ module.exports = {
         }, 
         tech: ["React", "Node.js", "Express", "TypeScript"],
         url: "https://my-table.netlify.app/",
-        github: "https://github.com/christianjbolus/my_table"
+        github: "https://github.com/christianjbolus/my_table",
+        order: "odd"
     },
     {
       name: 'Neuze',
@@ -74,7 +76,8 @@ module.exports = {
         }, 
         tech: ["HTML", "CSS", "JavaScript"],
         url: "https://christianjbolus.github.io/neuze/",
-        github: "https://github.com/christianjbolus/neuze"
+        github: "https://github.com/christianjbolus/neuze",
+        order: "even"
     },
   ],
 

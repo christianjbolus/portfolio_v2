@@ -6,8 +6,8 @@
 
 <ScrollReveal>
   <div class="container">
-    <Phone image={project.image}/>
-    <div class="info">
+    <Phone image={project.image} order={project.order}/>
+    <div class={`info ${project.order}`}>
       <h3 class="title">{project.name}</h3>
       <div class="description">
         <p>{project.description}</p>
@@ -43,6 +43,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &.odd {
+      grid-column: 1 / 8;
+      grid-row: 1 / 1;
+      text-align: left;
+
+      .tech {
+        justify-content: flex-start;
+      }
+    }
     
     @media (max-width: 768px) {
       grid-column: 1;
