@@ -10,8 +10,8 @@
     font-family: var(--font-mono);
     text-decoration: none;
     border: 1px solid var(--accent);
-    border-radius: 5px;
-    padding: 12px 16px;
+    border-radius: 25px;
+    padding: 10px 20px;
     background-color: transparent;
     margin-left: 20px;
     cursor: pointer;
