@@ -79,6 +79,11 @@
       height: 100%;
       border-radius: 36px;
       padding: 0 20px;
+
+      .project-links {
+        justify-content: flex-start;
+        margin-left: -10px;
+      }
     }
   }
 
