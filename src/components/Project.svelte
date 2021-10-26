@@ -1,5 +1,6 @@
 <script>
   import { Phone } from './index'
+  import { Icon } from './icons/index'
   import { ScrollReveal } from './effects'
   export let project = {}
 </script>
@@ -17,6 +18,14 @@
         <li class="tool">{tool}</li>
         {/each}
       </ul>
+      <div class="project-links">
+        <a href={project.github}>
+          <Icon name="GitHub" className="social-icon" />
+        </a>
+        <a href={project.url}>
+          <Icon name="External" className="external"/>
+        </a>
+      </div>
     </div>
   </div>
 </ScrollReveal>
@@ -51,6 +60,15 @@
 
       .tech {
         justify-content: flex-start;
+
+        .tool {
+          margin: 0 20px 5px 0;
+        }
+      }
+
+      .project-links {
+        justify-content: flex-start;
+        margin-left: -10px;
       }
     }
     
@@ -105,6 +123,18 @@
 
     @media (max-width: 768px) {
       margin: 0 20px 5px 0;
+    }
+  }
+
+  .project-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: -10px;
+
+    & a {
+      padding: 10px;
     }
   }
 
