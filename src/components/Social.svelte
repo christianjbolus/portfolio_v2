@@ -10,7 +10,7 @@
     <div class="social">
       {#each socialMedia as {name, url}}
       <a href={url}>
-        <Icon name={name} />
+        <Icon name={name} className="social-icon"/>
       </a>
       {/each}
     </div>
@@ -29,6 +29,10 @@
       width: 1px;
       height: 90px;
       background-color: var(--light-grey);
+    }
+
+    a {
+      padding: 10px;
     }
   }
 </style>
