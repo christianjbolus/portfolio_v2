@@ -34,7 +34,7 @@
 		justify-content: center;
 		align-items: flex-start;
 		min-height: 100vh;
-
+		max-width: 1000px;
 	}
 
   div :global(h1) {

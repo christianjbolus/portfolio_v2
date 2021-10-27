@@ -10,12 +10,12 @@
   .left {
     position: fixed;
     bottom: 0;
-    left: 30px;
+    left: 40px;
   }
 
   .right {
     position: fixed;
     bottom: 0;
-    right: 30px;
+    right: 40px;
   }
 </style>
