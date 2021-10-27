@@ -2,19 +2,21 @@
   export let text
 </script>
 
-<h2>{text}</h2>
+<h2 class="numbered-header">{text}</h2>
 
 <style lang="scss">
-  h2 {
+  .numbered-header {
     color: var(--light-grey);
     display: flex;
     align-items: center;
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 40px;
+    white-space: nowrap;
 
     &:before {
-      content: "01.";
+      counter-increment: section;
+	    content: "0" counter(section) ".";
       color: var(--accent);
       font-family: var(--font-mono);
       position: relative;

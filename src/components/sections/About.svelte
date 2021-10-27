@@ -1,6 +1,6 @@
 <script>
   import NumberedHeader from "../NumberedHeader.svelte";
-  import ScrollReveal from '../effects/ScrollReveal.svelte'
+  import { ScrollReveal } from '../effects'
   // const skills = [
   //   "JavaScript", "TypeScript", "Ruby", "HTML/CSS", "React", "Next.js", "Node.js", 
   //   "Express", "Ruby on Rails", "Mongo DB", "PostgreSQL", "GraphQL", "Git"  
@@ -29,12 +29,14 @@
             members to improve and reach their goals.
           </p>
         </div>
-        <img src="headshot.jpg" alt="Headshot"/>
+        <div class="wrapper">
+          <img src="headshot.jpg" alt="Headshot"/>
+        </div>
       </div>
     </section>
   </ScrollReveal>
 
-<style>
+<style lang="scss">
   .about {
     max-width: 900px;
     margin: 0 auto;
@@ -45,6 +47,10 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 50px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr
+    }
   }
 
   p {
@@ -54,8 +60,15 @@
     margin-bottom: 10px;
   }
 
+  .wrapper {
+    max-width: 300px;
+
+    @media (max-width: 768px) {
+      justify-self: center;
+    }
+  }
+
   img {
-    height: 300px;
-    width: 300px;
+    max-width: 300px;
   }
 </style>

@@ -1,5 +1,5 @@
 <script>
-	import { Hero, About, Projects } from './sections'
+	import { Hero, About, Projects, Contact } from './sections'
 	import { NavBar, Social, Email } from './index'
 </script>
 
@@ -8,12 +8,18 @@
 	<Hero />
 	<About />
 	<Projects />
+	<Contact />
 	<Social />
 	<Email />
 </main>
 
-<style>
+<style lang="scss">
 	main {
 		padding: 0 150px;
+		counter-reset: section;
+
+		@media (max-width: 1024px) {
+			padding: 0 100px;
+		}
 	}
 </style>

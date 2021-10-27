@@ -1,27 +1,27 @@
 <script>
   import Transition from './effects/Transition.svelte'
   import Button from './Button.svelte'
-  import { navLinks } from '../data.js'
+  import { navLinks, resume } from '../data.js'
 </script>
 
 <div class="container">
   <nav class="navbar">
     <ol class="nav-links">
       {#each navLinks as {url, name}, i}
-      <Transition config={{y: -100, duration: 500, delay: i * 100}}>
+      <Transition type="fly" config={{y: -100, duration: 500, delay: i * 100}}>
         <li class="link">
           <a href={url}>{name}</a>
         </li>
       </Transition>
       {/each}
-      <Transition config={{y: -100, duration: 500, delay: navLinks.length * 100}}>
-        <Button text="Resume"/>
+      <Transition type="fly" config={{y: -100, duration: 500, delay: navLinks.length * 100}}>
+        <Button className="resume-link" text="Resume" url={resume}/>
       </Transition>
     </ol>
   </nav>
 </div>
 
-<style>
+<style lang="scss">
   .container {
     height: 100px;
     display: flex;
@@ -35,7 +35,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    counter-reset: link 0;
+    counter-reset: link;
   }
 
   li {
@@ -48,11 +48,12 @@
     text-decoration: none;
     padding: 10px;
     cursor: pointer;
+
+    &::before {
+      content: "0" counter(link) ".";
+      color: var(--accent);
+      margin-right: 5px;
+    }
   }
-  
-  a::before {
-    content: "0" counter(link) ".";
-    color: var(--accent);
-    margin-right: 5px;
-  }
+
 </style>
