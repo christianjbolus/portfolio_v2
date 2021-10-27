@@ -6,16 +6,28 @@
   <slot />
 </div>
 
-<style>
-  .left {
+<style lang="scss">
+  .left, .right {
     position: fixed;
     bottom: 0;
     left: 40px;
+
+    @media (max-width: 1080px) {
+      left: 20px
+    }
+
+    @media (max-width: 768px) {
+      display: none
+    }
   }
 
   .right {
-    position: fixed;
-    bottom: 0;
     right: 40px;
+    left: auto;
+
+    @media (max-width: 1080px) {
+      right: 20px
+    }
+
   }
 </style>
