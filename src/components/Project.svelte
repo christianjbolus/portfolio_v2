@@ -20,7 +20,7 @@
       </ul>
       <div class="project-links">
         <a href={project.github}>
-          <Icon name="GitHub" className="social-icon" />
+          <Icon name="GitHub" className="github" />
         </a>
         <a href={project.url}>
           <Icon name="External" className="external"/>

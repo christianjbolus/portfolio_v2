@@ -79,12 +79,28 @@ ol, ul {
 	transform: translateY(-3px) scale(1.05);
 }
 
+.github {
+	color: #fff;
+	height: 20px;
+	width: 20px;
+	transition: 200ms;
+}
+
+.github:hover {
+	color: var(--accent);
+}
+
 .external {
 	color: #fff;
 	height: 22px;
 	width: 22px;
 	margin-bottom: 4px;
 	margin-top: 1px;
+	transition: 200ms;
+}
+
+.external:hover {
+	color: var(--accent);
 }
 
 :root {
