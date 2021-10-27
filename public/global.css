@@ -50,6 +50,7 @@ ol, ul {
 	background-color: transparent;
 	margin-left: 20px;
 	cursor: pointer;
+	transition: 200ms
 }
 
 .resume-link:hover {
