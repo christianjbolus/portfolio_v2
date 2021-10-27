@@ -1,6 +1,8 @@
 module.exports = {
   email: 'christianjbolus@gmail.com',
 
+  resume: 'https://drive.google.com/file/d/1EKgM_wVM-yNtksujrNpQMe5cnDGQxavg/view?usp=sharing',
+
   socialMedia: [
     {
       name: 'GitHub',

@@ -1,7 +1,7 @@
 <script>
   import Transition from './effects/Transition.svelte'
   import Button from './Button.svelte'
-  import { navLinks } from '../data.js'
+  import { navLinks, resume } from '../data.js'
 </script>
 
 <div class="container">
@@ -15,7 +15,7 @@
       </Transition>
       {/each}
       <Transition type="fly" config={{y: -100, duration: 500, delay: navLinks.length * 100}}>
-        <Button text="Resume"/>
+        <Button className="resume-link" text="Resume" url={resume}/>
       </Transition>
     </ol>
   </nav>
