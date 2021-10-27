@@ -35,6 +35,12 @@
       letter-spacing: 1px;
       writing-mode: vertical-rl;
       padding: 10px;
+      transition: 200ms;
+
+      &:hover {
+        color: var(--accent);
+	      transform: translateY(-4px);
+      }
     }
   }
 </style>

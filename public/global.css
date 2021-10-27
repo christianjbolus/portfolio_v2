@@ -71,6 +71,12 @@ ol, ul {
 	color: #fff;
 	height: 20px;
 	width: 20px;
+	transition: 200ms;
+}
+
+.social-icon:hover {
+	color: var(--accent);
+	transform: translateY(-3px) scale(1.05);
 }
 
 .external {
