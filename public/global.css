@@ -110,6 +110,7 @@ ol, ul {
 	--red-tint: rgba(255, 51, 0, 0.1);
 	--light-grey: #dfdfdf;
 	--dark-grey: #999999;
+	--bg-grey: rgb(43, 43, 43);
 
 	--fs-xs: 13px;
 	--fs-sm: 16px;

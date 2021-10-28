@@ -28,10 +28,13 @@
     display: flex;
     align-items: center;
     position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
     right: 0;
     padding: 0 50px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(43, 43, 43, 0.9);
   }
 
   .navbar {
