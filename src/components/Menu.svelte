@@ -9,7 +9,7 @@
 </script>
 
 <div class="menu">
-  <div class="menu-control" on:click={toggleMenu}></div>
+  <div class={show ? 'menu-control toggle-menu' : 'menu-control'} on:click={toggleMenu}></div>
   <aside class={show ? 'show-menu' : ''}>
     <nav>
       <ol>
@@ -34,11 +34,31 @@
   }
 
   .menu-control {
-    height: 30px;
+    height: 2px;
     width: 30px;
-    background-color: var(--dark-grey);
+    background-color: var(--accent);
     position: relative;
     z-index: 15;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background-color: var(--accent);
+    }
+
+    &::before {
+      top: -10px;
+    }
+
+     &::after {
+      top: 10px;
+     }
+
+     &.toggle-menu {
+      transform: rotate(45deg);
+     }
   }
 
   aside {
