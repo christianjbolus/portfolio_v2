@@ -58,7 +58,6 @@
 	}
 
   div :global(p) {
-    font-size: 1.1rem;
     color: var(--dark-grey);
 		line-height: 27px;
   }

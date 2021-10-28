@@ -31,7 +31,7 @@
 
   ol {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: var(--fs-xs);
     display: flex;
     justify-content: flex-end;
     align-items: center;

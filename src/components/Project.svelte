@@ -99,6 +99,7 @@
     padding: 20px;
     border-radius: 5px;
     color: var(--dark-grey);
+    font-size: var(--fs-sm);
     line-height: 27px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
@@ -114,7 +115,7 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: var(--fs-xs);
     color: var(--light-grey);
     margin-top: 30px;
 
