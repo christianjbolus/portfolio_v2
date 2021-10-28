@@ -40,7 +40,7 @@ ol, ul {
 	list-style: none;
 }
 
-.resume-link, .email-link {
+.resume-button, .resume-link, .email-button {
 	color: var(--accent);
 	font-family: var(--font-mono);
 	text-decoration: none;
@@ -54,18 +54,25 @@ ol, ul {
 	transition: 200ms
 }
 
-.resume-link:hover {
+.resume-button:hover {
 	background-color: var(--red-tint)
 }
 
-.email-link {
+.resume-link {
+	border-radius: 30px;
+	padding: 15px 40px;
+	margin-left: 0px;
+	margin-top: 20px;
+}
+
+.email-button {
 	border-radius: 30px;
 	padding: 20px 40px;
 	margin-top: 30px;
 	margin-left: 0;
 }
 
-.email-link:hover {
+.email-button:hover {
 	background-color: var(--red-tint)
 }
 
@@ -113,7 +120,8 @@ ol, ul {
 	--bg-grey: rgb(43, 43, 43);
 
 	--fs-xs: 13px;
-	--fs-sm: 16px;
+	--fs-sm: 14px;
+	--fs-md: 16px;
 	--fs-lg: 18px;
 	--font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono", monospace;
 }

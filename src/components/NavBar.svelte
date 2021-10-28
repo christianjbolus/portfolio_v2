@@ -1,6 +1,6 @@
 <script>
   import Transition from './effects/Transition.svelte'
-  import Button from './Button.svelte'
+  import { Button, Menu } from './index'
   import { navLinks, resume } from '../data.js'
 </script>
 
@@ -16,9 +16,10 @@
       </Transition>
       {/each}
       <Transition type="fly" config={{y: -100, duration: 500, delay: navLinks.length * 100}}>
-        <Button className="resume-link" text="Resume" url={resume}/>
+        <Button className="resume-button" text="Resume" url={resume}/>
       </Transition>
     </ol>
+    <Menu />
   </nav>
 </div>
 
@@ -33,8 +34,12 @@
     left: 0;
     right: 0;
     padding: 0 50px;
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     background-color: rgba(43, 43, 43, 0.9);
+
+    @media (max-width: 768px) {
+      padding: 0 25px;
+    }
   }
 
   .navbar {
@@ -43,6 +48,7 @@
     align-items: center;
     width: 100%;
     position: relative;
+    counter-reset: link;
   }
 
   .logo {
@@ -58,7 +64,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    counter-reset: link;
 
     @media (max-width: 768px) {
       display: none;

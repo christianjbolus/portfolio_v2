@@ -1,6 +1,7 @@
 import Button from './Button.svelte'
 import Email from './Email.svelte'
 import Layout from './Layout.svelte'
+import Menu from './Menu.svelte'
 import NavBar from './NavBar.svelte'
 import NumberedHeader from './NumberedHeader.svelte'
 import Phone from './Phone.svelte'
@@ -12,6 +13,7 @@ export {
   Button,
   Email,
   Layout,
+  Menu,
   NavBar,
   NumberedHeader,
   Phone,

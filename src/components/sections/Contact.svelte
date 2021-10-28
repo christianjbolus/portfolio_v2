@@ -13,7 +13,7 @@
       prospect of us working together.  Feel free to reach out to me anytime. 
       Thanks for visiting!
     </p>
-    <Button className="email-link" text="Say Hello" url={`mailto:${email}`}/>
+    <Button className="email-button" text="Say Hello" url={`mailto:${email}`}/>
   </section>
 </ScrollReveal>
 
