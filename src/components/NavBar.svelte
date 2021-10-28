@@ -6,6 +6,7 @@
 
 <div class="container">
   <nav class="navbar">
+    <div class="logo"></div>
     <ol class="nav-links">
       {#each navLinks as {url, name}, i}
       <Transition type="fly" config={{y: -100, duration: 500, delay: i * 100}}>
@@ -25,8 +26,26 @@
   .container {
     height: 100px;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 50px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .logo {
+    height: 50px;
+    width: 50px;
+    background-color: var(--accent)
   }
 
   ol {
@@ -36,6 +55,10 @@
     justify-content: flex-end;
     align-items: center;
     counter-reset: link;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   li {

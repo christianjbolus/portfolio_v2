@@ -1,6 +1,6 @@
 <script>
 	import { Hero, About, Projects, Contact } from './sections'
-	import { NavBar, Social, Email, Layout } from './index'
+	import { Layout, NavBar } from './index'
 </script>
 
 <main>
