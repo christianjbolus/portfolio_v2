@@ -22,7 +22,7 @@
           </li>
           {/each}
         </ol>
-        <Button className="resume-link" text="Resume" url={resume}/>
+        <Button className="resume-link" text="Resume" url={resume} onClick={toggleMenu}/>
       </nav>
     </aside>
   </Transition>
