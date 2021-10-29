@@ -39,6 +39,7 @@
     background-color: var(--accent);
     position: relative;
     z-index: 15;
+    transition: 200ms;
 
     &::before, &::after {
       content: '';
@@ -46,6 +47,7 @@
       height: 2px;
       width: 100%;
       background-color: var(--accent);
+      transition: 200ms;
     }
 
     &::before {
@@ -58,6 +60,16 @@
 
      &.toggle-menu {
       transform: rotate(45deg);
+      height: 0;
+
+      &::before {
+        top: 0;
+        transform: rotate(-90deg);
+      }
+
+      &::after {
+        top: 0;
+      }
      }
   }
 
