@@ -2,6 +2,7 @@
   import { navLinks, resume } from '../data'
   import { Transition } from './effects/index'
   import { Button } from './index'
+
   let show = false
 
   const toggleMenu = () => {
@@ -11,20 +12,20 @@
 
 <div class="menu">
   <Transition type="fade" config={{y: -100, duration: 500, delay: 100}}>
-  <div class={show ? 'menu-control close' : 'menu-control'} on:click={toggleMenu}></div>
-  <aside class={show ? 'show-menu' : ''}>
-    <nav>
-      <ol>
-        {#each navLinks as { url, name }}
-        <li>
-          <a href={url}>{name}</a>
-        </li>
-        {/each}
-      </ol>
-      <Button className="resume-link" text="Resume" url={resume}/>
-    </nav>
-  </aside>
-</Transition>
+    <div class={show ? 'menu-control close' : 'menu-control'} on:click={toggleMenu}></div>
+    <aside class={show ? 'show-menu' : ''}>
+      <nav>
+        <ol>
+          {#each navLinks as { url, name }}
+          <li on:click={toggleMenu}>
+            <a href={url}>{name}</a>
+          </li>
+          {/each}
+        </ol>
+        <Button className="resume-link" text="Resume" url={resume}/>
+      </nav>
+    </aside>
+  </Transition>
 </div>
 
 <style lang="scss">

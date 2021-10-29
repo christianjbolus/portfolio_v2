@@ -1,5 +1,5 @@
 <script>
-  import Transition from './effects/Transition.svelte'
+  import { Transition } from './effects/index'
   import { Button, Menu } from './index'
   import { navLinks, resume } from '../data.js'
 </script>
