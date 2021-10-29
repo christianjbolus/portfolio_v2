@@ -6,7 +6,9 @@
 
 <div class="container">
   <nav class="navbar">
-    <div class="logo"></div>
+    <Transition type="fade" config={{y: -100, duration: 500, delay: 100}}>
+      <div class="logo"></div>
+    </Transition>
     <ol class="nav-links">
       {#each navLinks as {url, name}, i}
       <Transition type="fly" config={{y: -100, duration: 500, delay: i * 100}}>
@@ -19,7 +21,7 @@
         <Button className="resume-button" text="Resume" url={resume}/>
       </Transition>
     </ol>
-    <Menu />
+      <Menu />
   </nav>
 </div>
 

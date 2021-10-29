@@ -1,5 +1,6 @@
 <script>
   import { navLinks, resume } from '../data'
+  import { Transition } from './effects/index'
   import { Button } from './index'
   let show = false
 
@@ -9,7 +10,8 @@
 </script>
 
 <div class="menu">
-  <div class={show ? 'menu-control toggle-menu' : 'menu-control'} on:click={toggleMenu}></div>
+  <Transition type="fade" config={{y: -100, duration: 500, delay: 100}}>
+  <div class={show ? 'menu-control close' : 'menu-control'} on:click={toggleMenu}></div>
   <aside class={show ? 'show-menu' : ''}>
     <nav>
       <ol>
@@ -22,6 +24,7 @@
       <Button className="resume-link" text="Resume" url={resume}/>
     </nav>
   </aside>
+</Transition>
 </div>
 
 <style lang="scss">
@@ -58,7 +61,7 @@
       top: 10px;
      }
 
-     &.toggle-menu {
+     &.close {
       transform: rotate(45deg);
       height: 0;
 
