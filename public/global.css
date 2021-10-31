@@ -40,6 +40,11 @@ ol, ul {
 	list-style: none;
 }
 
+.blur {
+	overflow: hidden;
+  /* backdrop-filter: blur(5px); */
+}
+
 .resume-button, .resume-link, .email-button {
 	color: var(--accent);
 	font-family: var(--font-mono);
