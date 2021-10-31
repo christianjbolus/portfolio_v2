@@ -6,7 +6,9 @@
   <NavBar />
   <Social />
   <Email />
-  <slot />
+  <div id="content">
+    <slot />
+  </div>
 </div>
 
 <style lang="scss">
