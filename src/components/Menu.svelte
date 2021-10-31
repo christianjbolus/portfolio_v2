@@ -7,6 +7,7 @@
 
   const toggleMenu = () => {
     show = !show
+    document.body.classList.toggle('blur')
   }
 </script>
 
@@ -41,6 +42,7 @@
     height: 2px;
     width: 30px;
     background-color: var(--accent);
+    border-radius: 5px;
     position: relative;
     z-index: 15;
     transition: 200ms;
@@ -51,6 +53,7 @@
       height: 2px;
       width: 100%;
       background-color: var(--accent);
+      border-radius: 5px;
       transition: 200ms;
     }
 
