@@ -2,9 +2,25 @@
   import { Transition } from './effects/index'
   import { Button, Menu } from './index'
   import { navLinks, resume } from '../data.js'
+
+  let scrollPosition = window.pageYOffset
+  let hide = false
+  
+  function handleScroll() {
+    let currentScrollPosition = window.pageYOffset
+    if (currentScrollPosition > scrollPosition) {
+      hide = true
+    } else {
+      hide = false
+    }
+    scrollPosition = currentScrollPosition
+  }
+
+  window.addEventListener('scroll', handleScroll)
+
 </script>
 
-<div class="container">
+<div class={hide ? "container hide" : "container"}>
   <nav class="navbar">
     <Transition type="fade" config={{y: -100, duration: 500, delay: 100}}>
       <div class="logo"></div>
@@ -38,6 +54,7 @@
     padding: 0 50px;
     /* backdrop-filter: blur(5px); */
     background-color: rgba(43, 43, 43, 0.9);
+    transition: 300ms;
 
     @media (max-width: 768px) {
       padding: 0 25px;
@@ -88,6 +105,10 @@
       color: var(--accent);
       margin-right: 5px;
     }
+  }
+
+  .hide {
+    transform: translateY(-100px)
   }
 
 </style>
