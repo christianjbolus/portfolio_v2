@@ -60,7 +60,7 @@ ol, ul {
 	background-color: transparent;
 	margin-left: 20px;
 	cursor: pointer;
-	transition: 200ms
+	transition: var(--transition);
 }
 
 .resume-button:hover {
@@ -89,7 +89,7 @@ ol, ul {
 	color: #fff;
 	height: 20px;
 	width: 20px;
-	transition: 200ms;
+	transition: var(--transition);
 }
 
 .social-icon:hover {
@@ -101,7 +101,7 @@ ol, ul {
 	color: #fff;
 	height: 20px;
 	width: 20px;
-	transition: 200ms;
+	transition: var(--transition);
 }
 
 .github:hover {
@@ -114,7 +114,7 @@ ol, ul {
 	width: 22px;
 	margin-bottom: 4px;
 	margin-top: 1px;
-	transition: 200ms;
+	transition: var(--transition);
 }
 
 .external:hover {

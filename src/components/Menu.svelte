@@ -45,7 +45,7 @@
     border-radius: 5px;
     position: relative;
     z-index: 15;
-    transition: 200ms;
+    transition: var(--transition);
 
     &::before, &::after {
       content: '';
@@ -54,7 +54,7 @@
       width: 100%;
       background-color: var(--accent);
       border-radius: 5px;
-      transition: 200ms;
+      transition: var(--transition);
     }
 
     &::before {
@@ -93,7 +93,7 @@
     justify-content: center;
     align-items: center;
     padding: 50px 10px;
-    transition: 200ms;
+    transition: var(--transition);
   }
 
   nav {

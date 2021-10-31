@@ -35,7 +35,7 @@
       letter-spacing: 1px;
       writing-mode: vertical-rl;
       padding: 10px;
-      transition: 200ms;
+      transition: var(--transition);
 
       &:hover {
         color: var(--accent);
