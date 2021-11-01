@@ -1,6 +1,7 @@
 <script>
   import { Transition } from './effects/index'
   import { Button, Menu } from './index'
+  import { Icon } from './icons/index'
   import { navLinks, resume } from '../data.js'
 
   let scrollPosition = window.pageYOffset
@@ -23,7 +24,7 @@
 <div class={hide ? "container hide" : "container"}>
   <nav class="navbar">
     <Transition type="fade" config={{y: -100, duration: 500, delay: 100}}>
-      <div class="logo"></div>
+      <img class="logo" src="logo.svg" alt="logo" />
     </Transition>
     <ol class="nav-links">
       {#each navLinks as {url, name}, i}
@@ -71,10 +72,8 @@
   }
 
   .logo {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: var(--accent)
+    height: 45px;
+    width: 45px;
   }
 
   ol {
