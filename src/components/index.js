@@ -1,5 +1,6 @@
 import Button from './Button.svelte'
 import Email from './Email.svelte'
+import Footer from './Footer.svelte'
 import Layout from './Layout.svelte'
 import Menu from './Menu.svelte'
 import NavBar from './NavBar.svelte'
@@ -12,6 +13,7 @@ import Social from './Social.svelte'
 export {
   Button,
   Email,
+  Footer,
   Layout,
   Menu,
   NavBar,

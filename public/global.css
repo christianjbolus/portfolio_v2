@@ -128,6 +128,7 @@ ol, ul {
 	--dark-grey: #999999;
 	--bg-grey: rgb(43, 43, 43);
 
+	--fs-xxs: 12px;
 	--fs-xs: 13px;
 	--fs-sm: 14px;
 	--fs-md: 16px;
@@ -139,6 +140,6 @@ ol, ul {
 
 @media (max-width: 480px) {
 	body {
-		font-size: var(--fs-sm)
+		font-size: var(--fs-md)
 	}
 }

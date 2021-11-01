@@ -1,5 +1,5 @@
 <script>
-  import { NavBar, Social, Email } from './index'
+  import { NavBar, Social, Email, Footer } from './index'
 </script>
 
 <div class="layout">
@@ -8,6 +8,7 @@
   <Email />
   <div id="content">
     <slot />
+    <Footer />
   </div>
 </div>
 

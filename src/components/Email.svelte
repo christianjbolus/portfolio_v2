@@ -30,7 +30,7 @@
       color: var(--light-grey);
       text-decoration: none;
       font-family: var(--font-mono);
-      font-size: 12px;
+      font-size: var(--fs-xxs);
       font-weight: 300;
       letter-spacing: 1px;
       writing-mode: vertical-rl;

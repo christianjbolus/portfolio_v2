@@ -68,6 +68,8 @@
   }
 
   img {
-    max-width: 300px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
   }
 </style>
