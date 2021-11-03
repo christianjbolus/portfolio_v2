@@ -1,10 +1,7 @@
 <script>
   import NumberedHeader from "../NumberedHeader.svelte";
   import { ScrollReveal } from '../effects'
-  // const skills = [
-  //   "JavaScript", "TypeScript", "Ruby", "HTML/CSS", "React", "Next.js", "Node.js", 
-  //   "Express", "Ruby on Rails", "Mongo DB", "PostgreSQL", "GraphQL", "Git"  
-  //   ]
+  import { skills } from '../../data.js'
 </script>
 
   <ScrollReveal>
@@ -13,18 +10,16 @@
       <div class="container">
         <div>
           <p>
-            Hello there! Hard working and diligent Software Engineer with a love of learning and an insatiable curiosity.  
-            I have a tenacious approach to problem solving and am motivated by overcoming challenges and 
-            developing efficient solutions.  I’m passionate about building products that reduce friction 
-            in the lives of the user.    
+            Hello there!  My name is Christian and I'm passionate about build software products 
+            that reduce friction in the lives of users.  I have a tenacious approach to problem 
+            solving and am motivated by overcoming challenges and developing efficient solutions.    
           </p>
           <p>
-            My background in marketing allows me to view software through a user 
-            focused lens. This informs my design decisions from the perspective of the end user and my 
-            fellow developers.
+            My background in marketing allows me to view software through a user focused lens. 
+            This informs my design decisions from the perspective of the end user and my fellow developers.
           </p>
           <p>
-            As a fast learner who is able to get along with all personality types, 
+            I'm a fast learner who is able to get along with all personality types and 
             I’m energized by working with high performance teams that are continually pushing their 
             members to improve and reach their goals.
           </p>
