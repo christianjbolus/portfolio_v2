@@ -1,7 +1,8 @@
 <script>
   import NumberedHeader from "../NumberedHeader.svelte";
   import { ScrollReveal } from '../effects'
-  import { skills } from '../../data.js'
+  let skills = ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "GraphQL"]
+  // import { skills } from '../../data.js'
 </script>
 
   <ScrollReveal>
@@ -23,6 +24,12 @@
             I’m energized by working with high performance teams that are continually pushing their 
             members to improve and reach their goals.
           </p>
+          <p>Some of the technologies I've been enjoying recently are:</p>
+          <ul class="skill-list">
+            {#each skills as skill }
+              <li>{skill}</li>
+            {/each}
+          </ul>
         </div>
         <div class="wrapper">
           <img src="headshot.jpg" alt="Headshot"/>
@@ -52,6 +59,29 @@
     color: var(--dark-grey);
     line-height: 27px;
     margin-bottom: 10px;
+  }
+
+  .skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    font-size: var(--fs-xs);
+
+    li {
+      color: var(--dark-grey);
+      font-family: var(--font-mono);
+      margin-bottom: 15px;
+
+      &::before {
+        content: '▷';
+        color: var(--accent);
+        padding-right: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      font-size: var(--fs-xxs);
+    }
   }
 
   .wrapper {
