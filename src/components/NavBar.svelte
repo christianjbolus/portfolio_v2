@@ -24,7 +24,7 @@
 <div class={hide ? "container hide" : "container"}>
   <nav class="navbar">
     <Transition type="fade" config={{y: -100, duration: 500, delay: 100}}>
-      <img class="logo" src="logo.svg" alt="logo" />
+      <a href="#hero"><img class="logo" src="logo.svg" alt="logo" /></a>
     </Transition>
     <ol class="nav-links">
       {#each navLinks as {url, name}, i}
@@ -91,20 +91,22 @@
   li {
     margin: 0 5px;
     counter-increment: link;
-  }
 
-  a {
-    color: var(--light-grey);
-    text-decoration: none;
-    padding: 10px;
-    cursor: pointer;
+    a {
+      color: var(--light-grey);
+      text-decoration: none;
+      padding: 10px;
+      cursor: pointer;
 
-    &::before {
-      content: "0" counter(link) ".";
-      color: var(--accent);
-      margin-right: 5px;
+      &::before {
+        content: "0" counter(link) ".";
+        color: var(--accent);
+        margin-right: 5px;
+      }
     }
   }
+
+
 
   .hide {
     transform: translateY(-100px)
