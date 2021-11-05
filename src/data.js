@@ -44,10 +44,10 @@ module.exports = {
       name: 'About',
       url: '/#about',
     },
-    {
-      name: 'Skills',
-      url: '/#skills',
-    },
+    // {
+    //   name: 'Skills',
+    //   url: '/#skills',
+    // },
     {
       name: 'Projects',
       url: '/#projects',
