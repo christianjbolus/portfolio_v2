@@ -1,7 +1,6 @@
 <script>
   import { Transition } from './effects/index'
   import { Button, Menu } from './index'
-  import { Icon } from './icons/index'
   import { navLinks, resume } from '../data.js'
 
   let scrollPosition = window.pageYOffset
