@@ -99,14 +99,15 @@
     right: 0;
     bottom: 0;
     height: 100vh;
-    transform: translateX(100%);
-    width: 300px;
+    width: calc(min(75vw, 350px));
+    padding: 50px 10px;
     background-color: #3b3b3b;
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 10px;
+    transform: translateX(100%);
+    visibility: hidden;
     transition: var(--transition);
   }
 
@@ -147,5 +148,6 @@
 
   .show-menu {
     transform: translateX(0);
+    visibility: visible;
   }
 </style>

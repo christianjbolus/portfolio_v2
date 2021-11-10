@@ -21,7 +21,7 @@
 
 </script>
 
-<div class={hide ? "container hide" : "container"}>
+<header class={hide ? "container hide" : "container"}>
   <nav class="navbar">
     <Transition type="fade" config={{y: -100, duration: 500, delay: 100}}>
       <a href="#hero"><img class="logo" src="logo.svg" alt="logo" /></a>
@@ -40,7 +40,7 @@
     </ol>
     <Menu />
   </nav>
-</div>
+</header>
 
 <style lang="scss">
   .container {

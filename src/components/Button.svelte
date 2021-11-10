@@ -1,5 +1,5 @@
 <script>
-  export let text, url, className, onClick = null;
+  export let text = undefined, url = undefined, className, onClick = null;
 </script>
 
 {#if url}
