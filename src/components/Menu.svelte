@@ -98,6 +98,7 @@
     top: 0;
     right: 0;
     bottom: 0;
+    height: 100vh;
     transform: translateX(100%);
     width: 300px;
     background-color: #3b3b3b;
