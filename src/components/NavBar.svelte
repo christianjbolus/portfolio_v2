@@ -4,11 +4,12 @@
   import { navLinks, resume } from '../data.js'
 
   let scrollPosition = window.pageYOffset
+  $: scrolledToTop = scrollPosition < 50;
   let hide = false
   
   function handleScroll() {
     let currentScrollPosition = window.pageYOffset
-    if (currentScrollPosition > scrollPosition) {
+    if (currentScrollPosition > scrollPosition && !scrolledToTop) {
       hide = true
     } else {
       hide = false
@@ -27,17 +28,17 @@
     </Transition>
     <ol class="nav-links">
       {#each navLinks as {url, name}, i}
-      <Transition type="fly" config={{y: -100, duration: 500, delay: i * 100}}>
-        <li class="link">
-          <a href={url}>{name}</a>
-        </li>
-      </Transition>
+        <Transition type="fly" config={{y: -100, duration: 500, delay: i * 100}}>
+          <li class="link">
+            <a href={url}>{name}</a>
+          </li>
+        </Transition>
       {/each}
       <Transition type="fly" config={{y: -100, duration: 500, delay: navLinks.length * 100}}>
         <Button className="resume-button" text="Resume" url={resume}/>
       </Transition>
     </ol>
-      <Menu />
+    <Menu />
   </nav>
 </div>
 
