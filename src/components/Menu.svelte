@@ -13,9 +13,9 @@
 
 <div class="menu">
   <Transition type="fade" config={{y: -100, duration: 500, delay: 100}}>
-    <Button className="ham-button">
+    <Button className="ham-button" onClick={toggleMenu}>
       <div class="ham-container">
-        <div class={show ? 'menu-control close' : 'menu-control'} on:click={toggleMenu}></div>
+        <div class={show ? 'menu-control close' : 'menu-control'}></div>
       </div>
     </Button>
     <aside class={show ? 'show-menu' : ''}>
