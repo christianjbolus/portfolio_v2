@@ -1,5 +1,5 @@
 import External from './External.svelte'
-import GitHub from './Github.svelte'
+import GitHub from './GitHub.svelte'
 import Icon from './Icon.svelte'
 import LinkedIn from './LinkedIn.svelte'
 import Twitter from './Twitter.svelte'
