@@ -60,9 +60,15 @@
 
       .tech {
         justify-content: flex-start;
+        margin: 30px 45px 0 0;
+
+        @media (max-width: 768px) {
+          justify-content: flex-start;
+          margin-right: 0
+      }
 
         .tool {
-          margin: 0 20px 5px 0;
+          margin: 0 20px 10px 0;
         }
       }
 
@@ -117,15 +123,16 @@
     font-family: var(--font-mono);
     font-size: var(--fs-xs);
     color: var(--light-grey);
-    margin-top: 30px;
+    margin: 30px 0 0 45px;
 
     @media (max-width: 768px) {
       justify-content: flex-start;
+      margin-left: 0
     }
   }
 
   .tool {
-    margin: 0 0 5px 20px;
+    margin: 0 0 10px 20px;
 
     @media (max-width: 768px) {
       margin: 0 20px 5px 0;
@@ -136,7 +143,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-right: -10px;
 
     & a {

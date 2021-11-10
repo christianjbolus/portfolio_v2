@@ -67,7 +67,7 @@ module.exports = {
         path: 'chatter_main.png',
         alt: "Chatter's main mobile view.",
       },
-      tech: ['React', 'Next.js', 'Ruby', 'Ruby on Rails', 'PostgreSQL'],
+      tech: ['React', 'Next.js', 'Ruby on Rails', 'PostgreSQL'],
       url: 'https://chatter-social.netlify.app/',
       github: 'https://github.com/christianjbolus/chatter',
       order: 'even',
