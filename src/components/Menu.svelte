@@ -13,7 +13,11 @@
 
 <div class="menu">
   <Transition type="fade" config={{y: -100, duration: 500, delay: 100}}>
-    <div class={show ? 'menu-control close' : 'menu-control'} on:click={toggleMenu}></div>
+    <Button className="ham-button">
+      <div class="ham-container">
+        <div class={show ? 'menu-control close' : 'menu-control'} on:click={toggleMenu}></div>
+      </div>
+    </Button>
     <aside class={show ? 'show-menu' : ''}>
       <nav>
         <ol>
@@ -43,13 +47,16 @@
     width: 30px;
     background-color: var(--accent);
     border-radius: 5px;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    right: 0;
     z-index: 15;
     transition: var(--transition);
 
     &::before, &::after {
       content: '';
       position: absolute;
+      right: 0;
       height: 2px;
       width: 100%;
       background-color: var(--accent);
@@ -78,6 +85,12 @@
         top: 0;
       }
      }
+  }
+
+  .ham-container {
+    position: relative;
+    height: 26px;
+    width: 30px;
   }
 
   aside {
