@@ -5,14 +5,14 @@
   import { projects } from '../../data'
 </script>
 
-<ScrollReveal>
-  <section class="projects" id="projects">
+<section class="projects" id="projects">
+  <ScrollReveal>
     <NumberedHeader text="My Projects"/>
-    {#each projects as project}
-      <Project project={project}/>
-    {/each}
-  </section>
-</ScrollReveal>
+  </ScrollReveal>
+  {#each projects as project}
+    <Project project={project}/>
+  {/each}
+</section>
 
 <style>
   .projects {

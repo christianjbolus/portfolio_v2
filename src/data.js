@@ -101,8 +101,8 @@ module.exports = {
   ],
 
   srConfig: {
-    delay: 300,
-    distance: '40px',
+    delay: 200,
+    distance: '20px',
     duration: 600,
     easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
     interval: 0,
