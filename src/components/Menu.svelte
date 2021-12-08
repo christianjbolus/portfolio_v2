@@ -99,8 +99,10 @@
     right: 0;
     bottom: 0;
     height: 100vh;
+    max-height: 100vh;
     width: calc(min(75vw, 350px));
     padding: 50px 10px;
+    box-sizing: border-box;
     background-color: #3b3b3b;
     z-index: 10;
     display: flex;
