@@ -9,6 +9,15 @@
     show = !show
     document.body.classList.toggle('blur')
   }
+
+  const onResize = () => {
+    if (window.innerWidth > 768) {
+      show = false
+      document.body.classList.remove('blur')
+    }
+  }
+
+  window.addEventListener('resize', onResize)
 </script>
 
 <div class="menu">
