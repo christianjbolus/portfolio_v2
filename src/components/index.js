@@ -3,7 +3,7 @@ import Email from './Email.svelte'
 import Footer from './Footer.svelte'
 import Layout from './Layout.svelte'
 import Menu from './Menu.svelte'
-import NavBar from './NavBar.svelte'
+import Navbar from './Navbar.svelte'
 import NumberedHeader from './NumberedHeader.svelte'
 import Phone from './Phone.svelte'
 import Project from './Project.svelte'
@@ -16,7 +16,7 @@ export {
   Footer,
   Layout,
   Menu,
-  NavBar,
+  Navbar,
   NumberedHeader,
   Phone,
   Project,
