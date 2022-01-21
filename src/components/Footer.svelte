@@ -6,13 +6,15 @@
 <footer>
   <div class="social">
     {#each socialMedia as {name, url}}
-    <a href={url}>
+    <a class="icon" href={url}>
       <Icon name={name} className="social-icon"/>
     </a>
     {/each}
   </div>
   <div>
-    <p>Built by Christian Bolus</p>
+    <a class="github-link" href="https://github.com/christianjbolus/portfolio_v2" target="_blank">
+      Built by Christian Bolus
+    </a>
   </div>
 </footer>
 
@@ -38,14 +40,21 @@
     }
   }
 
-  a {
+  .icon {
       padding: 10px;
     }
 
-  p {
+  .github-link {
+    display: inline-block;
     color: var(--light-grey);
     font-family: var(--font-mono);
     font-size: var(--fs-xxs);
     margin-bottom: 20px;
+    text-decoration: none;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--accent);
+    }
   }
 </style>
