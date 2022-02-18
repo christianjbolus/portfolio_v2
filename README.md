@@ -11,7 +11,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/30486adc-2ecc-44cc-8787-afe3c3ae935d/deploy-status)](https://app.netlify.com/sites/christianbolusdev/deploys)
 
 </div>
-
+<p align="center">Design inspired by <a href="https://brittanychiang.com/" target="_blank">brittanychiang.com</a></p>
 <br>
 
 ![home](https://res.cloudinary.com/ditt6ekpx/image/upload/v1636509311/meta_images/portfolio_v2_zrmyig.png)
