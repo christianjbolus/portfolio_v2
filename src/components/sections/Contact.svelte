@@ -6,12 +6,11 @@
 
 <ScrollReveal>
   <section class="contact" id="contact">
-    <h2>Like What You See?</h2>
+    <h2>What's Next?</h2>
     <h3>Get In Touch</h3>
     <p>
-      I'm currently open to new opportunities and would love to discuss the 
-      prospect of us working together.  Feel free to reach out to me anytime. 
-      Thanks for visiting!
+      The best way to reach me is email. I'm happy to talk about AI agents,
+      product engineering, or anything you're building.
     </p>
     <Button className="email-button" text="Say Hello" url={`mailto:${email}`}/>
   </section>

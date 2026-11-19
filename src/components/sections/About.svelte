@@ -1,8 +1,6 @@
 <script>
   import NumberedHeader from "../NumberedHeader.svelte";
   import { ScrollReveal } from '../effects'
-  let skills = ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "GraphQL"]
-  // import { skills } from '../../data.js'
 </script>
 
   <ScrollReveal>
@@ -11,25 +9,21 @@
       <div class="container">
         <div>
           <p>
-            Hello there!  My name is Christian and I'm passionate about building software products 
-            that reduce friction in the lives of users.  I have a tenacious approach to problem 
-            solving and am motivated by overcoming challenges and developing efficient solutions.    
+            I'm a founding engineer at Tiga AI, where I've helped build the product since 2023.
+            My work covers the Go backend, the Vue frontend, the infrastructure our AI agents run on,
+            and integrations with systems like HubSpot and Salesforce. A big part of the job is
+            product: I work directly with customers to shape features, and with the founders on
+            what we build next.
           </p>
           <p>
-            My background in marketing allows me to view software through a user focused lens. 
-            This informs my design decisions from the perspective of the end user and my fellow developers.
+            Before that, I was an engineer at Triblio, building data pipelines and customer-facing
+            analytics on high-volume intent data, including a GPU-backed transformer classification
+            pipeline. I've been shipping language-model features since 2022.
           </p>
           <p>
-            I'm a fast learner who is able to get along with all personality types and 
-            I’m energized by working with high performance teams that are continually pushing their 
-            members to improve and reach their goals.
+            I came to engineering from marketing, and that still shapes how I work: I start with the
+            person using the software and work back to the code.
           </p>
-          <p>Some of the technologies I've been using recently are:</p>
-          <ul class="skill-list">
-            {#each skills as skill }
-              <li>{skill}</li>
-            {/each}
-          </ul>
         </div>
         <div class="wrapper">
           <img src="headshot.jpg" alt="Headshot"/>
@@ -59,29 +53,6 @@
     color: var(--dark-grey);
     line-height: 27px;
     margin-bottom: 10px;
-  }
-
-  .skill-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
-    font-size: var(--fs-xs);
-
-    li {
-      color: var(--dark-grey);
-      font-family: var(--font-mono);
-      margin-bottom: 15px;
-
-      &::before {
-        content: '▷';
-        color: var(--accent);
-        padding-right: 10px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      font-size: var(--fs-xxs);
-    }
   }
 
   .wrapper {

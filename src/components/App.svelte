@@ -1,5 +1,5 @@
 <script>
-	import { Hero, About, Projects, Contact } from './sections'
+	import { Hero, About, Work, Contact } from './sections'
 	import { Layout } from './index'
 </script>
 
@@ -7,7 +7,8 @@
 	<Layout>
 		<Hero />
 		<About />
-		<Projects />
+		<!-- Selected Work is hidden until the case studies are ready. -->
+		<!-- <Work /> -->
 		<Contact />
 	</Layout>
 </main>

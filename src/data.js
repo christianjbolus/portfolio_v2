@@ -1,23 +1,7 @@
 module.exports = {
   email: 'christianjbolus@gmail.com',
 
-  resume: 'resume.pdf',
-
-  skills: [
-    'JavaScript',
-    'TypeScript',
-    'Ruby',
-    'HTML/CSS',
-    'React',
-    'Next.js',
-    'Node.js',
-    'Express',
-    'Ruby on Rails',
-    'Mongo DB',
-    'PostgreSQL',
-    'GraphQL',
-    'Git',
-  ],
+  resume: 'Christian_Bolus_Software_Engineer.pdf',
 
   socialMedia: [
     {
@@ -43,20 +27,84 @@ module.exports = {
       name: 'About',
       url: '/#about',
     },
+    // Hidden until the Selected Work section is ready.
     // {
-    //   name: 'Skills',
-    //   url: '/#skills',
+    //   name: 'Work',
+    //   url: '/#work',
     // },
-    {
-      name: 'Projects',
-      url: '/#projects',
-    },
     {
       name: 'Contact',
       url: '/#contact',
     },
   ],
 
+  // Text in [square brackets] renders as a highlighted placeholder.
+  // Replace every one before deploying.
+  caseStudies: [
+    {
+      company: 'Tiga AI',
+      title: 'Spotting the agent-first shift',
+      sections: [
+        {
+          label: 'The problem',
+          text: '[What the product looked like before the shift, and what wasn\'t working.]',
+        },
+        {
+          label: 'What I noticed',
+          text: 'Every AI sales tool was converging on the same product: a screen with a text box in the middle. [Why that was the wrong product, in your words.]',
+        },
+        {
+          label: 'What we did',
+          text: 'I brought this to the founders, and it became the company\'s agent-first direction: agents with reusable skills that run on a schedule, recover from failures, and stay within spend limits.',
+        },
+        {
+          label: 'Outcome',
+          text: '[What changed: adoption, how customers use it, or what it made possible.]',
+        },
+      ],
+      tech: ['LLM agents', 'Go', 'PostgreSQL', 'Redis'],
+    },
+    {
+      company: 'Tiga AI',
+      title: 'Turning SEC filings into sales signals',
+      sections: [
+        {
+          label: 'The problem',
+          text: 'A customer wanted to trigger outreach based on what companies disclose in their 10-K and 10-Q filings. These documents are long, unstructured, and full of the details that matter.',
+        },
+        {
+          label: 'What I did',
+          text: 'I scoped the feature with the customer, designed the UI, and built the pipeline: fetching filings, splitting them into chunks, storing vector embeddings, and using retrieval-augmented generation (RAG) to analyze each filing.',
+        },
+        {
+          label: 'Outcome',
+          text: 'Customers ran the signals and found the output useful. [Add a number: customers using it, filings processed, or a typical use case.]',
+        },
+      ],
+      tech: ['RAG', 'Embeddings', 'Go', 'Vue'],
+    },
+    {
+      company: 'Triblio',
+      title: 'Making intent data visible',
+      sections: [
+        {
+          label: 'The problem',
+          text: 'Triblio collected large volumes of intent data from several providers. [What customers couldn\'t do with it before the dashboard.]',
+        },
+        {
+          label: 'What I did',
+          text: 'I built a customer-facing analytics dashboard with several views of intent, including topic-frequency trends and a world heat map that showed intent by country. Behind it, I worked on the ETL pipelines that ingested and normalized provider data, and kept the GPU classification pipeline running, scaling AWS GPU capacity when jobs backed up.',
+        },
+        {
+          label: 'Outcome',
+          text: '[Anything you remember: adoption, use in sales demos, or what it replaced.]',
+        },
+      ],
+      tech: ['ETL', 'Data visualization', 'AWS'],
+    },
+  ],
+
+  // Old bootcamp projects. Not shown on the page; kept for the Projects section.
   projects: [
     {
       name: 'Chatter',

@@ -2,10 +2,12 @@
 	import Transition from '../effects/Transition.svelte'
 	import {onMount} from 'svelte'
 
-	const one = `<h1 class="one">Greetings, my name is</h1>`
+	const one = `<h1 class="one">Hi, my name is</h1>`
 	const two = `<h2>Christian Bolus.</h2>`
-	const three = `<h3>I work for the internet.</h3>`
-	const four = `<p>I'm a software engineer specializing in technologies for the web.</p>`
+	const three = `<h3>I build AI products.</h3>`
+	const four = `<p>I'm a founding engineer at Tiga AI. I take products from the first customer conversation to production, working across LLM agents, data pipelines, and the product decisions about what gets built.</p>`
+	const five = `<a class="email-button" href="#work">See my work</a>`
+	// `five` (the See my work button) is hidden until Selected Work is ready.
 	const items = [one, two, three, four]
 	
 	let render = false;
@@ -60,5 +62,10 @@
   div :global(p) {
     color: var(--dark-grey);
 		line-height: 27px;
+		max-width: 540px;
   }
+
+	div :global(.email-button) {
+		display: inline-block;
+	}
 </style>
